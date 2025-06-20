@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Bebas Neue Cyrillic";
+    src: url(bebasneuecyrillic.ttf);
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url(centurygothic.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container .header {
+    display: grid;
+    grid-template-rows: 100px 5px;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 40px;
+}
+
+.container .header .header-title {
+    display: block;
+    font-size: 6em;
+    font-family: "Bebas Neue Cyrillic";
+}
+
+.container .header .header-subtitle {
+    display: block;
+    font-size: 3em;
+    font-family: "Century Gothic";
+}
+
+.container .mummys-good-words {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px 5px;
+    margin-top: 70px;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    text-align: center;
+}
+
+.container .mummys-good-words * {
+    background-color: none;
+    transition: transform 0.2s;
+}
+
+.container .mummys-good-words *:hover {
+    transition: transform 0.2s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.container .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 30px;
+    align-items: start;
+}
+
+.container .main-content .numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px;
+}
+
+.container .main-content .numbers * {
+    background-color: blueviolet;
+    padding: 35px;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Bebas Neue Cyrillic";
+    color: #fff;
+}
+
+.container .main-content .texts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.container .main-content .texts * {
+    background-color: aquamarine;
+    padding: 15px;
+    font-size: 20px;
+    color: #00008b;
+}
+
+.container .main-content .somebody-else {
+    display: grid;
+    grid-template-columns: 370px 370px;
+    grid-template-rows: 370px 370px;
+    grid-gap: 10px;
+}
+
+.container .main-content .somebody-else .images .jpg {
+    width: 370px;
+    height: 370px;
+}
