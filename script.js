@@ -1,22 +1,20 @@
-'use strict';
+'use sctrict';
 
 let navItem = document.querySelectorAll('.item');
 
-function redactColor(item) {
-        if (item[i].style.backgroundColor = "none") {
-            for (let i = 0; i < item.length; i = i + 1) {
-                item[i].addEventListener('click', function() {
-                    item[i].style.backgroundColor = "yellow";
-                });
-            }
-        } else if (item[i].style.backgroundColor = "yellow") {
-            for (let i = 0; i < item.length; i = i + 1) {
-                item[i].addEventListener('click', function() {
-                    item[i].style.backgroundColor = "none"; 
-                });   
-            };    
-        };
+function redactBackgroundColor(item) {
+    let count = 0;
+    for (let i = 0; i < item.length; i = i + 1) {
+        item[i].addEventListener('click', function() {
+            count = count + 1;
+            if (count % 2 != 0) {
+                item[i].style.backgroundColor = "yellow";
+            } else {
+                item[i].style.backgroundColor = "white";
+            };
+        });
+    };
     return item;
 };
 
-redactColor(navItem);
+redactBackgroundColor(navItem);
